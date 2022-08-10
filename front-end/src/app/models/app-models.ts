@@ -2,6 +2,7 @@ export interface AppState {
   username: string;
   aiName: string;
   textareaContent: string;
+  loading: boolean;
 }
 
 export interface OpenAIResponseBody {

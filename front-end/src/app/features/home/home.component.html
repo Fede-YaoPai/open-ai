@@ -6,8 +6,8 @@
       <textarea pInputTextarea #aiChat [scrollTop]="aiChat.scrollHeight" [value]="(store.state$ | async)!.textareaContent" class="h-full w-full" [formControl]="textArea"></textarea>
     </div>
     <div class="flex gap-3">
-      <button pButton type="button" class="p-button-raised p-button-primary" label="Submit" icon="pi pi-send"  (click)="submitConvo()"></button>
-      <button pButton type="button" class="p-button-raised p-button-outlined p-button-secondary" label="Refresh" icon="pi pi-refresh"  (click)="resetConvo()"></button>
+      <button pButton type="button" class="p-button-primary" label="Submit" icon="pi pi-send"  (click)="submitConvo()"></button>
+      <button pButton type="button" class="p-button-outlined p-button-secondary" label="Refresh" icon="pi pi-refresh"  (click)="refreshConvo()"></button>
     </div>
   </div>
 </div>

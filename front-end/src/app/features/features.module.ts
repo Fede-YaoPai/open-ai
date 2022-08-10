@@ -6,6 +6,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ButtonModule } from 'primeng/button';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     InputTextareaModule,
     FormsModule,
     ReactiveFormsModule,

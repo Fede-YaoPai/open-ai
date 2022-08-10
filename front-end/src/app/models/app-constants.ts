@@ -15,5 +15,6 @@ export const INITIAL_AI_NAME: string = 'AI';
 export const INITIAL_APP_STATE: AppState = {
   username: INITIAL_USERNAME,
   aiName: INITIAL_AI_NAME,
-  textareaContent: INITIAL_TEXTAREA_CONTENT
+  textareaContent: INITIAL_TEXTAREA_CONTENT,
+  loading: false
 };

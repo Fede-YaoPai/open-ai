@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppStateService } from './core/services/app-state.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'front-end';
+  constructor(protected store: AppStateService) { }
 }

@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit, OnDestroy, AfterViewChecked {
     });
   }
 
-  public resetConvo(): void {
+  public refreshConvo(): void {
     this.store.textareaContent = INITIAL_TEXTAREA_CONTENT;
   }
 

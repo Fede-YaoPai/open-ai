@@ -36,4 +36,12 @@ export class AppStateService {
       aiName: a
     });
   }
+
+  get loading(): boolean { return this.state.getValue().loading }
+  set loading(l: boolean) {
+    this.state.next({
+      ...this.state.getValue(),
+      loading: l
+    });
+  }
 }
