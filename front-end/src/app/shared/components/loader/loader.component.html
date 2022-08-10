@@ -1,3 +1,3 @@
-<div class="loader" [ngClass]="(store.state$ | async)!.loading ? 'loader-active' : ''">
+<div class="loader" [ngClass]="{ 'loader-active': (store.state$ | async)!.loading }">
   <p-progressSpinner></p-progressSpinner>
 </div>
