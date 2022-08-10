@@ -38,7 +38,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 
-// ENDPOINTS
+// ENDPOINTS 
 app.post('/submitConversation',async (req: Request, res: Response) => {
   const body: OpenAIRequestBody = req.body;
   
