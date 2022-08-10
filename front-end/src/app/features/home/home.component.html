@@ -3,11 +3,11 @@
   <h3>Talk to Fede's AI using the area below</h3>
   <div class="flex flex-column align-items-stretch flex-1">
     <div class="mb-4 flex-1">
-      <textarea pInputTextarea [(ngModel)]="textAreaContent" class="h-full w-full"></textarea>
+      <textarea pInputTextarea [value]="(store.state$ | async)!.textareaContent" class="h-full w-full" [formControl]="textArea"></textarea>
     </div>
     <div class="flex gap-3">
-      <button pButton type="button" label="Submit" (click)="submit($event)"></button>
-      <button pButton type="button" label="Reset" (click)="reset($event)"></button>
+      <button pButton type="button" label="Submit" (click)="submit()"></button>
+      <button pButton type="button" label="Reset" (click)="reset()"></button>
     </div>
   </div>
 </div>

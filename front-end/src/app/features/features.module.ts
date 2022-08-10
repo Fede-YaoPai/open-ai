@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { SettingsComponent } from './settings/settings.component';
 import { InputTextareaModule } from 'primeng/inputtextarea';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 
 
@@ -18,6 +18,7 @@ import { ButtonModule } from 'primeng/button';
     CommonModule,
     InputTextareaModule,
     FormsModule,
+    ReactiveFormsModule,
     ButtonModule
   ]
 })

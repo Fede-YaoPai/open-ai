@@ -50,7 +50,6 @@ app.post('/submitConversation',async (req: Request, res: Response) => {
     top_p: 1,
     frequency_penalty: 0.0,
     presence_penalty: 0.6,
-    //stop: [" Human:", " AI:"],
     stop: [...body.stop]
   });
 

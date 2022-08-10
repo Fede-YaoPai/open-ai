@@ -1,5 +1,11 @@
-export interface OpenAiResponseBody {
-  choices: OpenAiResponseChoice[];
+export interface AppState {
+  username: string;
+  aiName: string;
+  textareaContent: string;
+}
+
+export interface OpenAIResponseBody {
+  choices: OpenAIResponseChoice[];
   created: number;
   id: string;
   model: string;
@@ -11,7 +17,7 @@ export interface OpenAiResponseBody {
   }
 }
 
-export interface OpenAiResponseChoice {
+export interface OpenAIResponseChoice {
   finish_reason: string;
   index: number;
   logprobs: any;
