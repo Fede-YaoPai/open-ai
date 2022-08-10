@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { INITIAL_APP_STATE } from 'src/app/models/app-constants';
 import { AppState } from 'src/app/models/app-models';
 
