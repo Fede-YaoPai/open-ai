@@ -7,7 +7,7 @@ import { OpenAIRequestBody } from '@common-models';
 import { LOCAL_SERVER_PORT } from '../../common/models/common.constants'; 
 
 
-// SERVER
+// SERVER SETUP
 const app: Application = express();
 const port: number = LOCAL_SERVER_PORT;
 
@@ -18,7 +18,7 @@ app.listen(port, () => {
 app.use(express.json());
 
 
-// CORS
+// CORS CONFIGURATION
 const allowedOrigins: Array<string> = [
   'http://localhost:4200'
 ];
@@ -30,7 +30,7 @@ const corsOptions: cors.CorsOptions = {
 app.use(cors(corsOptions));
 
 
-// OPEN AI
+// OPEN AI CONFIGURATION
 const configuration = new Configuration({
   apiKey: OPENAI_API_KEY,
 });
